@@ -1,0 +1,10 @@
+{"name" :"Test Problem",
+"score": 10,
+"category": "Web",
+"grader" :"web/test/grader.py",
+"description" : "Easy problem",
+"threshold" : 0,
+"weightmap": {},
+"hint" : "Hint text. HTML can be used. The flag is `lmao'"}
+
+
