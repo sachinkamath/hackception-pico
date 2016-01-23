@@ -1,8 +1,0 @@
-{"name":"Hello From the Other Side",
-"score":100,
-"category":"web",
-"grader":"web/hello/grader.py",
-"description":"Adele sang this shit",
-"threshold":0,
-"weightmap":{},
-"hint":"the flag is hello from the other side"}
