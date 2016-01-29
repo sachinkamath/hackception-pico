@@ -2,8 +2,8 @@
 #!/bin/bash
 
 # Updates
-apt-get -y update
-apt-get -y upgrade
+#apt-get -y update
+#apt-get -y upgrade
 
 # CTF-Platform Dependencies
 apt-get -y install python3-pip
@@ -24,16 +24,16 @@ npm install -g coffee-script
 npm install -g react-tools
 npm install -g jsxhint
 
-pip3 install -r ~/vagrant/api/requirements.txt
+pip3 install -r vagrant/api/requirements.txt
 
 # Jekyll
 gem install jekyll -v 2.5.3
 
 # Configure Environment
-echo 'PATH=$PATH:~/vagrant/scripts' >> /etc/profile
+echo 'PATH=$PATH:/home/vagrant/scripts' >> /etc/profile
 
 # Configure Nginx
-#cp ~/vagrant/config/ctf.nginx /etc/nginx/sites-enabled/ctf
-#rm /etc/nginx/sites-enabled/default
-#mkdir -p /srv/http/ctf
-#service nginx restart
+cp config/ctf.nginx /etc/nginx/sites-enabled/ctf
+rm /etc/nginx/sites-enabled/default
+mkdir -p /srv/http/ctf
+service nginx restart

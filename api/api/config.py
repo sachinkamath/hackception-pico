@@ -11,7 +11,7 @@ import api.app
 
 """ FLASK """
 
-api.app.session_cookie_domain = "127.0.0.1"
+api.app.session_cookie_domain = "ctf.sachinwrites.xyz"
 api.app.session_cookie_path = "/"
 api.app.session_cookie_name = "flask"
 
@@ -20,7 +20,7 @@ api.app.secret_key = "5XVbne3AjPH35eEH8yQI"
 
 """ SECURITY """
 
-api.common.allowed_protocols = ["https", "http"]
+api.common.allowed_protocols = ["https"]
 api.common.allowed_ports = [8080]
 
 """ MONGO """
@@ -37,17 +37,17 @@ testing_mongo_port = 27017
 
 """ CTF SETTINGS """
 
-enable_teachers = True
-enable_feedback = True
+enable_teachers = False
+enable_feedback = False
 
-competition_name = "picoCTF"
+competition_name = "Hackception"
 competition_urls = ["127.0.0.1:8080"]
 
 # Max users on any given team
-api.team.max_team_users = 5
+api.team.max_team_users = 3
 
 # Teams to display on scoreboard graph
-api.stats.top_teams = 5
+api.stats.top_teams = 20
 
 # start and end times!
 class EST(datetime.tzinfo):
