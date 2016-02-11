@@ -33,14 +33,11 @@ gem install jekyll -v 2.5.3
 echo 'PATH=$PATH:~/vagrant/scripts' >> /etc/profile
 
 # Configure Nginx
-<<<<<<< HEAD
 #cp ~/vagrant/config/ctf.nginx /etc/nginx/sites-enabled/ctf
 #rm /etc/nginx/sites-enabled/default
 #mkdir -p /srv/http/ctf
 #service nginx restart
-=======
 cp ~/vagrant/config/ctf.nginx /etc/nginx/sites-enabled/ctf
 #rm /etc/nginx/sites-enabled/default
 mkdir -p /srv/http/ctf
 service nginx restart
->>>>>>> 2462bd45914ba48474703510dff7a643ff820873

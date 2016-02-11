@@ -60,7 +60,7 @@ class EST(datetime.tzinfo):
     def dst(self, dt):
         return datetime.timedelta(0)
 
-start_time = datetime.datetime(2000, 10, 27, 12, 13, 0, tzinfo=EST(4))
+start_time = datetime.datetime(2018, 2, 18, 12, 0, 0, tzinfo=EST(4))
 end_time = datetime.datetime(2055, 11, 7, 23, 59, 59, tzinfo=EST(5))
 
 # Root directory of all problem graders
@@ -111,5 +111,5 @@ api.autogen.seed = "0413688f8ef14e96b0afe25e2f662fef"
 
 # Will be emailed any severe internal exceptions!
 # Requires email block to be setup.
-api.logger.admin_emails = ["ben@example.com", "joe@example.com"]
+api.logger.admin_emails = ["sskamath96@gmail.com"]
 api.logger.critical_error_timeout = 600
